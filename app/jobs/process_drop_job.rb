@@ -76,7 +76,7 @@ class ProcessDropJob < ApplicationJob
         types[object_type].push(block) # save to memory, although unused :(
         add_to_db(object_type, block) # add to database
       end
-      # email # send email when job completes
+      email # send email when job completes
     end
   end
 end
