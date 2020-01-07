@@ -31,13 +31,13 @@ class ProcessDropJob < ApplicationJob
   end
 
   def email
-    from = Email.new(email: 'bradryannelson@gmail.com')
+    from = Email.new(email: 'conbractor@gmail.com')
     to = Email.new(email: 'conbractor@gmail.com')
     subject = 'Finished processing your file!'
     content = Content.new(type: 'text/plain', value: 'Hooray! Go team!')
     mail = SendGrid::Mail.new(from, subject, to, content)
 
-    sg = SendGrid::API.new(api_key: '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')
+    sg = SendGrid::API.new(api_key: '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')
     response = sg.client.mail._('send').post(request_body: mail.to_json)
     puts response.status_code
     puts response.body
@@ -79,7 +79,7 @@ class ProcessDropJob < ApplicationJob
         types[object_type].push(block) # save to memory, although unused :(
         add_to_db(object_type, block) # add to database
       end
-      email # send email when job completes
     end
+    email
   end
 end
