@@ -37,7 +37,7 @@ class ProcessDropJob < ApplicationJob
     content = Content.new(type: 'text/plain', value: 'Hooray! Go team!')
     mail = SendGrid::Mail.new(from, subject, to, content)
 
-    sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
+    sg = SendGrid::API.new(api_key: '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')
     sg.client.mail._('send').post(request_body: mail.to_json)
   end
 
