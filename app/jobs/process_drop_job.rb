@@ -4,6 +4,7 @@ include SendGrid
 class ProcessDropJob < ApplicationJob
   queue_as :default
 
+  # Database calls to add records
   def add_to_db(object_type, block)
     if object_type.downcase == 'compliance'
       Compliance.create(block)
@@ -30,6 +31,7 @@ class ProcessDropJob < ApplicationJob
     end
   end
 
+  # Send email to ENV variable
   def email
     from = Email.new(email: 'conbractor@gmail.com')
     to = Email.new(email: ENV['EMAIL'])
@@ -44,6 +46,7 @@ class ProcessDropJob < ApplicationJob
     puts response.headers
   end
 
+  # Called by perform_now/later. Loop through file and parse records.
   def perform(*args)
     file = File.open(args[0].file_path) # Open file via filepath
     types = Hash("GENERAL" => [], "COMPLIANCE" => [], "CONSTRUCTION" => [], "GLASS" => [], "DHW-GENERATOR" => [],
