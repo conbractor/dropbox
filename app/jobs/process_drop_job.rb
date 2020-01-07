@@ -32,12 +32,12 @@ class ProcessDropJob < ApplicationJob
 
   def email
     from = Email.new(email: 'conbractor@gmail.com')
-    to = Email.new(email: 'conbractor@gmail.com')
+    to = Email.new(email: ENV['EMAIL'])
     subject = 'Finished processing your file!'
     content = Content.new(type: 'text/plain', value: 'Hooray! Go team!')
     mail = SendGrid::Mail.new(from, subject, to, content)
 
-    sg = SendGrid::API.new(api_key: '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')
+    sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
     response = sg.client.mail._('send').post(request_body: mail.to_json)
     puts response.status_code
     puts response.body
