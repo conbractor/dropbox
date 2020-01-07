@@ -33,7 +33,7 @@ class ProcessDropJob < ApplicationJob
 
   # Send email to ENV variable
   def email
-    from = Email.new(email: 'conbractor@gmail.com')
+    from = Email.new(email: 'noreply@conbractor.herokuapp.com')
     to = Email.new(email: ENV['EMAIL'])
     subject = 'Finished processing your file!'
     content = Content.new(type: 'text/plain', value: 'Hooray! Go team!')
