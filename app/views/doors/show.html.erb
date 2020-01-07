@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Object name:</strong>
+  <%= @door.object_name %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @door.area %>
+</p>
+
+<p>
+  <strong>Construction:</strong>
+  <%= @door.construction %>
+</p>
+
+<p>
+  <strong>Type 0:</strong>
+  <%= @door.type_0 %>
+</p>
+
+<%= link_to 'Edit', edit_door_path(@door) %> |
+<%= link_to 'Back', doors_path %>

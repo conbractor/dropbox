@@ -1,0 +1,82 @@
+<%= form_with(model: compliance, local: true) do |form| %>
+  <% if compliance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(compliance.errors.count, "error") %> prohibited this compliance from being saved:</h2>
+
+      <ul>
+        <% compliance.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :object_name %>
+    <%= form.text_field :object_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :epc_type %>
+    <%= form.text_field :epc_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :eng_heritage %>
+    <%= form.text_field :eng_heritage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :br_stage %>
+    <%= form.text_field :br_stage %>
+  </div>
+
+  <div class="field">
+    <%= form.label :air_con_installed %>
+    <%= form.text_field :air_con_installed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :air_con_kw %>
+    <%= form.text_field :air_con_kw %>
+  </div>
+
+  <div class="field">
+    <%= form.label :air_con_inspection %>
+    <%= form.text_field :air_con_inspection %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alt_sys_consider %>
+    <%= form.text_field :alt_sys_consider %>
+  </div>
+
+  <div class="field">
+    <%= form.label :epc_language %>
+    <%= form.text_field :epc_language %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shell_and_core %>
+    <%= form.text_field :shell_and_core %>
+  </div>
+
+  <div class="field">
+    <%= form.label :modular_portable %>
+    <%= form.text_field :modular_portable %>
+  </div>
+
+  <div class="field">
+    <%= form.label :distress_purchase %>
+    <%= form.text_field :distress_purchase %>
+  </div>
+
+  <div class="field">
+    <%= form.label :air_con_kw_exact %>
+    <%= form.text_field :air_con_kw_exact %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

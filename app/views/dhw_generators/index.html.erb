@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Dhw Generators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Object name</th>
+      <th>Isbem</th>
+      <th>Heat gen type</th>
+      <th>Dhw gen seff</th>
+      <th>Fuel type</th>
+      <th>Store system</th>
+      <th>Store vol</th>
+      <th>Store insulat type</th>
+      <th>Store insulat thick</th>
+      <th>Sec circulation</th>
+      <th>Heat gen post98</th>
+      <th>Heat source</th>
+      <th>Hvac system eff</th>
+      <th>Chp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dhw_generators.each do |dhw_generator| %>
+      <tr>
+        <td><%= dhw_generator.object_name %></td>
+        <td><%= dhw_generator.isbem_id %></td>
+        <td><%= dhw_generator.heat_gen_type %></td>
+        <td><%= dhw_generator.dhw_gen_seff %></td>
+        <td><%= dhw_generator.fuel_type %></td>
+        <td><%= dhw_generator.store_system %></td>
+        <td><%= dhw_generator.store_vol %></td>
+        <td><%= dhw_generator.store_insulat_type %></td>
+        <td><%= dhw_generator.store_insulat_thick %></td>
+        <td><%= dhw_generator.sec_circulation %></td>
+        <td><%= dhw_generator.heat_gen_post98 %></td>
+        <td><%= dhw_generator.heat_source %></td>
+        <td><%= dhw_generator.hvac_system_eff %></td>
+        <td><%= dhw_generator.chp %></td>
+        <td><%= link_to 'Show', dhw_generator %></td>
+        <td><%= link_to 'Edit', edit_dhw_generator_path(dhw_generator) %></td>
+        <td><%= link_to 'Destroy', dhw_generator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Dhw Generator', new_dhw_generator_path %>

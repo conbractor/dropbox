@@ -1,0 +1,87 @@
+<%= form_with(model: dhw_generator, local: true) do |form| %>
+  <% if dhw_generator.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(dhw_generator.errors.count, "error") %> prohibited this dhw_generator from being saved:</h2>
+
+      <ul>
+        <% dhw_generator.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :object_name %>
+    <%= form.text_field :object_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :isbem_id %>
+    <%= form.text_field :isbem_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heat_gen_type %>
+    <%= form.text_field :heat_gen_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dhw_gen_seff %>
+    <%= form.text_field :dhw_gen_seff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fuel_type %>
+    <%= form.text_field :fuel_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :store_system %>
+    <%= form.text_field :store_system %>
+  </div>
+
+  <div class="field">
+    <%= form.label :store_vol %>
+    <%= form.text_field :store_vol %>
+  </div>
+
+  <div class="field">
+    <%= form.label :store_insulat_type %>
+    <%= form.text_field :store_insulat_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :store_insulat_thick %>
+    <%= form.text_field :store_insulat_thick %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sec_circulation %>
+    <%= form.text_field :sec_circulation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heat_gen_post98 %>
+    <%= form.text_field :heat_gen_post98 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heat_source %>
+    <%= form.text_field :heat_source %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hvac_system_eff %>
+    <%= form.text_field :hvac_system_eff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chp %>
+    <%= form.text_field :chp %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

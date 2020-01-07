@@ -1,0 +1,137 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Generals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Object name</th>
+      <th>B type</th>
+      <th>Weather</th>
+      <th>P name</th>
+      <th>B address 0</th>
+      <th>B address 1</th>
+      <th>B city</th>
+      <th>B postcode</th>
+      <th>C name</th>
+      <th>C telephone</th>
+      <th>C address</th>
+      <th>C email</th>
+      <th>C accred scheme web</th>
+      <th>C city</th>
+      <th>C postcode</th>
+      <th>C reg number</th>
+      <th>C reg number s</th>
+      <th>C reg number ir</th>
+      <th>C accred scheme</th>
+      <th>C emp trad name</th>
+      <th>C emp trad address</th>
+      <th>C emp trad number</th>
+      <th>C rel part disc</th>
+      <th>Transaction type</th>
+      <th>C qualifications</th>
+      <th>Soft comp name</th>
+      <th>Interface val</th>
+      <th>Interface</th>
+      <th>Interface version</th>
+      <th>Path file interface</th>
+      <th>Act not</th>
+      <th>Building area</th>
+      <th>Elec power factor</th>
+      <th>Nos level</th>
+      <th>C insurer</th>
+      <th>C ins pol number</th>
+      <th>C ins eff date</th>
+      <th>C ins exp date</th>
+      <th>C ins pi limit</th>
+      <th>B insp date</th>
+      <th>Uprn</th>
+      <th>Landmark environment</th>
+      <th>Light metering</th>
+      <th>Build orientation</th>
+      <th>Html dr reports</th>
+      <th>Max storey</th>
+      <th>B address 2</th>
+      <th>B address 3</th>
+      <th>O name</th>
+      <th>O telephone</th>
+      <th>O address</th>
+      <th>O city</th>
+      <th>O postcode</th>
+      <th>B loc description</th>
+      <th>Dh co2f</th>
+      <th>Dh primf</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @generals.each do |general| %>
+      <tr>
+        <td><%= general.object_name %></td>
+        <td><%= general.b_type %></td>
+        <td><%= general.weather %></td>
+        <td><%= general.p_name %></td>
+        <td><%= general.b_address_0 %></td>
+        <td><%= general.b_address_1 %></td>
+        <td><%= general.b_city %></td>
+        <td><%= general.b_postcode %></td>
+        <td><%= general.c_name %></td>
+        <td><%= general.c_telephone %></td>
+        <td><%= general.c_address %></td>
+        <td><%= general.c_email %></td>
+        <td><%= general.c_accred_scheme_web %></td>
+        <td><%= general.c_city %></td>
+        <td><%= general.c_postcode %></td>
+        <td><%= general.c_reg_number %></td>
+        <td><%= general.c_reg_number_s %></td>
+        <td><%= general.c_reg_number_ir %></td>
+        <td><%= general.c_accred_scheme %></td>
+        <td><%= general.c_emp_trad_name %></td>
+        <td><%= general.c_emp_trad_address %></td>
+        <td><%= general.c_emp_trad_number %></td>
+        <td><%= general.c_rel_part_disc %></td>
+        <td><%= general.transaction_type %></td>
+        <td><%= general.c_qualifications %></td>
+        <td><%= general.soft_comp_name %></td>
+        <td><%= general.interface_val %></td>
+        <td><%= general.interface %></td>
+        <td><%= general.interface_version %></td>
+        <td><%= general.path_file_interface %></td>
+        <td><%= general.act_not %></td>
+        <td><%= general.building_area %></td>
+        <td><%= general.elec_power_factor %></td>
+        <td><%= general.nos_level %></td>
+        <td><%= general.c_insurer %></td>
+        <td><%= general.c_ins_pol_number %></td>
+        <td><%= general.c_ins_eff_date %></td>
+        <td><%= general.c_ins_exp_date %></td>
+        <td><%= general.c_ins_pi_limit %></td>
+        <td><%= general.b_insp_date %></td>
+        <td><%= general.uprn %></td>
+        <td><%= general.landmark_environment %></td>
+        <td><%= general.light_metering %></td>
+        <td><%= general.build_orientation %></td>
+        <td><%= general.html_dr_reports %></td>
+        <td><%= general.max_storey %></td>
+        <td><%= general.b_address_2 %></td>
+        <td><%= general.b_address_3 %></td>
+        <td><%= general.o_name %></td>
+        <td><%= general.o_telephone %></td>
+        <td><%= general.o_address %></td>
+        <td><%= general.o_city %></td>
+        <td><%= general.o_postcode %></td>
+        <td><%= general.b_loc_description %></td>
+        <td><%= general.dh_co2f %></td>
+        <td><%= general.dh_primf %></td>
+        <td><%= link_to 'Show', general %></td>
+        <td><%= link_to 'Edit', edit_general_path(general) %></td>
+        <td><%= link_to 'Destroy', general, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New General', new_general_path %>

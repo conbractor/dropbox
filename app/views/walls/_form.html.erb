@@ -1,0 +1,62 @@
+<%= form_with(model: wall, local: true) do |form| %>
+  <% if wall.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(wall.errors.count, "error") %> prohibited this wall from being saved:</h2>
+
+      <ul>
+        <% wall.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :object_name %>
+    <%= form.text_field :object_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :multiplier %>
+    <%= form.text_field :multiplier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_0 %>
+    <%= form.text_field :type_0 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_env %>
+    <%= form.text_field :type_env %>
+  </div>
+
+  <div class="field">
+    <%= form.label :length %>
+    <%= form.text_field :length %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pitch %>
+    <%= form.text_field :pitch %>
+  </div>
+
+  <div class="field">
+    <%= form.label :area %>
+    <%= form.text_field :area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :orientation %>
+    <%= form.text_field :orientation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :construction %>
+    <%= form.text_field :construction %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

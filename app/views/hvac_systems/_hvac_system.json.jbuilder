@@ -1,0 +1,2 @@
+json.extract! hvac_system, :id, :object_name, :isbem_id, :type_0, :heat_source, :chp, :fuel_type, :fuel_type_cool, :heat_rec_system, :heat_rec_seff, :heat_rec_var_eff, :cool_sseer, :heat_sseff, :aux_energy_corr, :variable_speed_pump, :heat_gen_seff, :eff_default_heat, :metering, :sfp_check, :room_time_ctrl, :room_temp_ctrl, :cen_time_ctrl, :cool_gen_seer, :eff_default_cool, :cool_gen_eer, :weather_comp, :duct_leakage_pc, :optimum_start, :mixed_mode, :chiller_type, :sfp, :dhw_served_ref, :created_at, :updated_at
+json.url hvac_system_url(hvac_system, format: :json)

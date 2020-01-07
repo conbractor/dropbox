@@ -1,0 +1,297 @@
+<%= form_with(model: general, local: true) do |form| %>
+  <% if general.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(general.errors.count, "error") %> prohibited this general from being saved:</h2>
+
+      <ul>
+        <% general.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :object_name %>
+    <%= form.text_field :object_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :b_type %>
+    <%= form.text_field :b_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weather %>
+    <%= form.text_field :weather %>
+  </div>
+
+  <div class="field">
+    <%= form.label :p_name %>
+    <%= form.text_field :p_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :b_address_0 %>
+    <%= form.text_field :b_address_0 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :b_address_1 %>
+    <%= form.text_field :b_address_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :b_city %>
+    <%= form.text_field :b_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :b_postcode %>
+    <%= form.text_field :b_postcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_name %>
+    <%= form.text_field :c_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_telephone %>
+    <%= form.text_field :c_telephone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_address %>
+    <%= form.text_field :c_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_email %>
+    <%= form.text_field :c_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_accred_scheme_web %>
+    <%= form.text_field :c_accred_scheme_web %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_city %>
+    <%= form.text_field :c_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_postcode %>
+    <%= form.text_field :c_postcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_reg_number %>
+    <%= form.text_field :c_reg_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_reg_number_s %>
+    <%= form.text_field :c_reg_number_s %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_reg_number_ir %>
+    <%= form.text_field :c_reg_number_ir %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_accred_scheme %>
+    <%= form.text_field :c_accred_scheme %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_emp_trad_name %>
+    <%= form.text_field :c_emp_trad_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_emp_trad_address %>
+    <%= form.text_field :c_emp_trad_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_emp_trad_number %>
+    <%= form.text_field :c_emp_trad_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_rel_part_disc %>
+    <%= form.text_field :c_rel_part_disc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :transaction_type %>
+    <%= form.text_field :transaction_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_qualifications %>
+    <%= form.text_field :c_qualifications %>
+  </div>
+
+  <div class="field">
+    <%= form.label :soft_comp_name %>
+    <%= form.text_field :soft_comp_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :interface_val %>
+    <%= form.text_field :interface_val %>
+  </div>
+
+  <div class="field">
+    <%= form.label :interface %>
+    <%= form.text_field :interface %>
+  </div>
+
+  <div class="field">
+    <%= form.label :interface_version %>
+    <%= form.text_field :interface_version %>
+  </div>
+
+  <div class="field">
+    <%= form.label :path_file_interface %>
+    <%= form.text_field :path_file_interface %>
+  </div>
+
+  <div class="field">
+    <%= form.label :act_not %>
+    <%= form.text_field :act_not %>
+  </div>
+
+  <div class="field">
+    <%= form.label :building_area %>
+    <%= form.text_field :building_area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :elec_power_factor %>
+    <%= form.text_field :elec_power_factor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nos_level %>
+    <%= form.text_field :nos_level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_insurer %>
+    <%= form.text_field :c_insurer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_ins_pol_number %>
+    <%= form.text_field :c_ins_pol_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_ins_eff_date %>
+    <%= form.text_field :c_ins_eff_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_ins_exp_date %>
+    <%= form.text_field :c_ins_exp_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :c_ins_pi_limit %>
+    <%= form.text_field :c_ins_pi_limit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :b_insp_date %>
+    <%= form.text_field :b_insp_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :uprn %>
+    <%= form.text_field :uprn %>
+  </div>
+
+  <div class="field">
+    <%= form.label :landmark_environment %>
+    <%= form.text_field :landmark_environment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_metering %>
+    <%= form.text_field :light_metering %>
+  </div>
+
+  <div class="field">
+    <%= form.label :build_orientation %>
+    <%= form.text_field :build_orientation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :html_dr_reports %>
+    <%= form.text_field :html_dr_reports %>
+  </div>
+
+  <div class="field">
+    <%= form.label :max_storey %>
+    <%= form.text_field :max_storey %>
+  </div>
+
+  <div class="field">
+    <%= form.label :b_address_2 %>
+    <%= form.text_field :b_address_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :b_address_3 %>
+    <%= form.text_field :b_address_3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :o_name %>
+    <%= form.text_field :o_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :o_telephone %>
+    <%= form.text_field :o_telephone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :o_address %>
+    <%= form.text_field :o_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :o_city %>
+    <%= form.text_field :o_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :o_postcode %>
+    <%= form.text_field :o_postcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :b_loc_description %>
+    <%= form.text_field :b_loc_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dh_co2f %>
+    <%= form.text_field :dh_co2f %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dh_primf %>
+    <%= form.text_field :dh_primf %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

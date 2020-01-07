@@ -1,0 +1,37 @@
+<%= form_with(model: glass, local: true) do |form| %>
+  <% if glass.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(glass.errors.count, "error") %> prohibited this glass from being saved:</h2>
+
+      <ul>
+        <% glass.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :object_name %>
+    <%= form.text_field :object_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :u_value %>
+    <%= form.text_field :u_value %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tot_sol_trans %>
+    <%= form.text_field :tot_sol_trans %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lig_sol_trans %>
+    <%= form.text_field :lig_sol_trans %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

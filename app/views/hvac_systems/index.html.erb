@@ -1,0 +1,87 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Hvac Systems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Object name</th>
+      <th>Isbem</th>
+      <th>Type 0</th>
+      <th>Heat source</th>
+      <th>Chp</th>
+      <th>Fuel type</th>
+      <th>Fuel type cool</th>
+      <th>Heat rec system</th>
+      <th>Heat rec seff</th>
+      <th>Heat rec var eff</th>
+      <th>Cool sseer</th>
+      <th>Heat sseff</th>
+      <th>Aux energy corr</th>
+      <th>Variable speed pump</th>
+      <th>Heat gen seff</th>
+      <th>Eff default heat</th>
+      <th>Metering</th>
+      <th>Sfp check</th>
+      <th>Room time ctrl</th>
+      <th>Room temp ctrl</th>
+      <th>Cen time ctrl</th>
+      <th>Cool gen seer</th>
+      <th>Eff default cool</th>
+      <th>Cool gen eer</th>
+      <th>Weather comp</th>
+      <th>Duct leakage pc</th>
+      <th>Optimum start</th>
+      <th>Mixed mode</th>
+      <th>Chiller type</th>
+      <th>Sfp</th>
+      <th>Dhw served ref</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hvac_systems.each do |hvac_system| %>
+      <tr>
+        <td><%= hvac_system.object_name %></td>
+        <td><%= hvac_system.isbem_id %></td>
+        <td><%= hvac_system.type_0 %></td>
+        <td><%= hvac_system.heat_source %></td>
+        <td><%= hvac_system.chp %></td>
+        <td><%= hvac_system.fuel_type %></td>
+        <td><%= hvac_system.fuel_type_cool %></td>
+        <td><%= hvac_system.heat_rec_system %></td>
+        <td><%= hvac_system.heat_rec_seff %></td>
+        <td><%= hvac_system.heat_rec_var_eff %></td>
+        <td><%= hvac_system.cool_sseer %></td>
+        <td><%= hvac_system.heat_sseff %></td>
+        <td><%= hvac_system.aux_energy_corr %></td>
+        <td><%= hvac_system.variable_speed_pump %></td>
+        <td><%= hvac_system.heat_gen_seff %></td>
+        <td><%= hvac_system.eff_default_heat %></td>
+        <td><%= hvac_system.metering %></td>
+        <td><%= hvac_system.sfp_check %></td>
+        <td><%= hvac_system.room_time_ctrl %></td>
+        <td><%= hvac_system.room_temp_ctrl %></td>
+        <td><%= hvac_system.cen_time_ctrl %></td>
+        <td><%= hvac_system.cool_gen_seer %></td>
+        <td><%= hvac_system.eff_default_cool %></td>
+        <td><%= hvac_system.cool_gen_eer %></td>
+        <td><%= hvac_system.weather_comp %></td>
+        <td><%= hvac_system.duct_leakage_pc %></td>
+        <td><%= hvac_system.optimum_start %></td>
+        <td><%= hvac_system.mixed_mode %></td>
+        <td><%= hvac_system.chiller_type %></td>
+        <td><%= hvac_system.sfp %></td>
+        <td><%= hvac_system.dhw_served_ref %></td>
+        <td><%= link_to 'Show', hvac_system %></td>
+        <td><%= link_to 'Edit', edit_hvac_system_path(hvac_system) %></td>
+        <td><%= link_to 'Destroy', hvac_system, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hvac System', new_hvac_system_path %>

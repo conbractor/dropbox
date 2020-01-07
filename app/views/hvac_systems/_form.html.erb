@@ -1,0 +1,172 @@
+<%= form_with(model: hvac_system, local: true) do |form| %>
+  <% if hvac_system.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hvac_system.errors.count, "error") %> prohibited this hvac_system from being saved:</h2>
+
+      <ul>
+        <% hvac_system.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :object_name %>
+    <%= form.text_field :object_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :isbem_id %>
+    <%= form.text_field :isbem_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_0 %>
+    <%= form.text_field :type_0 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heat_source %>
+    <%= form.text_field :heat_source %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chp %>
+    <%= form.text_field :chp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fuel_type %>
+    <%= form.text_field :fuel_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fuel_type_cool %>
+    <%= form.text_field :fuel_type_cool %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heat_rec_system %>
+    <%= form.text_field :heat_rec_system %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heat_rec_seff %>
+    <%= form.text_field :heat_rec_seff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heat_rec_var_eff %>
+    <%= form.text_field :heat_rec_var_eff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cool_sseer %>
+    <%= form.text_field :cool_sseer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heat_sseff %>
+    <%= form.text_field :heat_sseff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :aux_energy_corr %>
+    <%= form.text_field :aux_energy_corr %>
+  </div>
+
+  <div class="field">
+    <%= form.label :variable_speed_pump %>
+    <%= form.text_field :variable_speed_pump %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heat_gen_seff %>
+    <%= form.text_field :heat_gen_seff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :eff_default_heat %>
+    <%= form.text_field :eff_default_heat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :metering %>
+    <%= form.text_field :metering %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sfp_check %>
+    <%= form.text_field :sfp_check %>
+  </div>
+
+  <div class="field">
+    <%= form.label :room_time_ctrl %>
+    <%= form.text_field :room_time_ctrl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :room_temp_ctrl %>
+    <%= form.text_field :room_temp_ctrl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cen_time_ctrl %>
+    <%= form.text_field :cen_time_ctrl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cool_gen_seer %>
+    <%= form.text_field :cool_gen_seer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :eff_default_cool %>
+    <%= form.text_field :eff_default_cool %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cool_gen_eer %>
+    <%= form.text_field :cool_gen_eer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weather_comp %>
+    <%= form.text_field :weather_comp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :duct_leakage_pc %>
+    <%= form.text_field :duct_leakage_pc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :optimum_start %>
+    <%= form.text_field :optimum_start %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mixed_mode %>
+    <%= form.text_field :mixed_mode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chiller_type %>
+    <%= form.text_field :chiller_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sfp %>
+    <%= form.text_field :sfp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dhw_served_ref %>
+    <%= form.text_field :dhw_served_ref %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

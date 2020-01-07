@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Object name:</strong>
+  <%= @wall.object_name %>
+</p>
+
+<p>
+  <strong>Multiplier:</strong>
+  <%= @wall.multiplier %>
+</p>
+
+<p>
+  <strong>Type 0:</strong>
+  <%= @wall.type_0 %>
+</p>
+
+<p>
+  <strong>Type env:</strong>
+  <%= @wall.type_env %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @wall.length %>
+</p>
+
+<p>
+  <strong>Pitch:</strong>
+  <%= @wall.pitch %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @wall.area %>
+</p>
+
+<p>
+  <strong>Orientation:</strong>
+  <%= @wall.orientation %>
+</p>
+
+<p>
+  <strong>Construction:</strong>
+  <%= @wall.construction %>
+</p>
+
+<%= link_to 'Edit', edit_wall_path(@wall) %> |
+<%= link_to 'Back', walls_path %>

@@ -1,0 +1,87 @@
+<%= form_with(model: window, local: true) do |form| %>
+  <% if window.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(window.errors.count, "error") %> prohibited this window from being saved:</h2>
+
+      <ul>
+        <% window.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :object_name %>
+    <%= form.text_field :object_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :area %>
+    <%= form.text_field :area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :glass %>
+    <%= form.text_field :glass %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dev_proj_ratio %>
+    <%= form.text_field :dev_proj_ratio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :aspect_ratio %>
+    <%= form.text_field :aspect_ratio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :frame_factor %>
+    <%= form.text_field :frame_factor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shading_position %>
+    <%= form.text_field :shading_position %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shading_colour %>
+    <%= form.text_field :shading_colour %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shading_translucency %>
+    <%= form.text_field :shading_translucency %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shading_factor %>
+    <%= form.text_field :shading_factor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brise_soleil %>
+    <%= form.text_field :brise_soleil %>
+  </div>
+
+  <div class="field">
+    <%= form.label :disp_wind %>
+    <%= form.text_field :disp_wind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :multiplier %>
+    <%= form.text_field :multiplier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :roof_light_cover %>
+    <%= form.text_field :roof_light_cover %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

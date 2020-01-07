@@ -1,0 +1,67 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  object_name: MyString
+  isbem_id: MyString
+  type_0: MyString
+  heat_source: MyString
+  chp: MyString
+  fuel_type: MyString
+  fuel_type_cool: MyString
+  heat_rec_system: MyString
+  heat_rec_seff: MyString
+  heat_rec_var_eff: MyString
+  cool_sseer: MyString
+  heat_sseff: MyString
+  aux_energy_corr: MyString
+  variable_speed_pump: MyString
+  heat_gen_seff: MyString
+  eff_default_heat: MyString
+  metering: MyString
+  sfp_check: MyString
+  room_time_ctrl: MyString
+  room_temp_ctrl: MyString
+  cen_time_ctrl: MyString
+  cool_gen_seer: MyString
+  eff_default_cool: MyString
+  cool_gen_eer: MyString
+  weather_comp: MyString
+  duct_leakage_pc: MyString
+  optimum_start: MyString
+  mixed_mode: MyString
+  chiller_type: MyString
+  sfp: MyString
+  dhw_served_ref: MyString
+
+two:
+  object_name: MyString
+  isbem_id: MyString
+  type_0: MyString
+  heat_source: MyString
+  chp: MyString
+  fuel_type: MyString
+  fuel_type_cool: MyString
+  heat_rec_system: MyString
+  heat_rec_seff: MyString
+  heat_rec_var_eff: MyString
+  cool_sseer: MyString
+  heat_sseff: MyString
+  aux_energy_corr: MyString
+  variable_speed_pump: MyString
+  heat_gen_seff: MyString
+  eff_default_heat: MyString
+  metering: MyString
+  sfp_check: MyString
+  room_time_ctrl: MyString
+  room_temp_ctrl: MyString
+  cen_time_ctrl: MyString
+  cool_gen_seer: MyString
+  eff_default_cool: MyString
+  cool_gen_eer: MyString
+  weather_comp: MyString
+  duct_leakage_pc: MyString
+  optimum_start: MyString
+  mixed_mode: MyString
+  chiller_type: MyString
+  sfp: MyString
+  dhw_served_ref: MyString

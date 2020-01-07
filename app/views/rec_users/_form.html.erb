@@ -1,0 +1,37 @@
+<%= form_with(model: rec_user, local: true) do |form| %>
+  <% if rec_user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rec_user.errors.count, "error") %> prohibited this rec_user from being saved:</h2>
+
+      <ul>
+        <% rec_user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :object_name %>
+    <%= form.text_field :object_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :code %>
+    <%= form.text_field :code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_in_out %>
+    <%= form.text_field :user_in_out %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rec_comment %>
+    <%= form.text_field :rec_comment %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

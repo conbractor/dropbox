@@ -1,0 +1,141 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Zones</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Object name</th>
+      <th>Isbem</th>
+      <th>Activity</th>
+      <th>Activity name</th>
+      <th>Multiplier</th>
+      <th>Area</th>
+      <th>Height</th>
+      <th>Vent zone hvac</th>
+      <th>Q v type</th>
+      <th>F ctrl vent dem</th>
+      <th>Heat rec system</th>
+      <th>Heat rec seff</th>
+      <th>Heat rec var eff</th>
+      <th>Hepa filter</th>
+      <th>Vent mech exh</th>
+      <th>Destrat fan</th>
+      <th>Vent sfp</th>
+      <th>Sfp tu</th>
+      <th>Q50 inf</th>
+      <th>Dhw generator</th>
+      <th>Dhw pipe len</th>
+      <th>Light case</th>
+      <th>Light type</th>
+      <th>Light display eff</th>
+      <th>Light control</th>
+      <th>Light dl aut zone</th>
+      <th>Light occ sens t</th>
+      <th>Light time switch</th>
+      <th>Jnct roof wall mc</th>
+      <th>Jnct wall grnd mc</th>
+      <th>Jnct wall wall mc</th>
+      <th>Jnct wall flr mc</th>
+      <th>Jnct lintel mc</th>
+      <th>Jnct sill mc</th>
+      <th>Jnct jamb mc</th>
+      <th>Jnct roof wall</th>
+      <th>Jnct wall grnd</th>
+      <th>Jnct wall wall</th>
+      <th>Jnct wall flr</th>
+      <th>Jnct lintel</th>
+      <th>Jnct sill</th>
+      <th>Jnct jamb</th>
+      <th>Jnct accr detail</th>
+      <th>Jnct accr detail mc</th>
+      <th>Night cooling</th>
+      <th>Q v m exh</th>
+      <th>Vent sfp exh</th>
+      <th>Vent mech exh ncm</th>
+      <th>Lamp ballast eff dl</th>
+      <th>Constant illum</th>
+      <th>Light dl area perc</th>
+      <th>Light paras pw occ</th>
+      <th>Shell assumed</th>
+      <th>Light act watt</th>
+      <th>Light lux design</th>
+      <th>Light photo type</th>
+      <th>Light paras pw</th>
+      <th>Light ph back</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @zones.each do |zone| %>
+      <tr>
+        <td><%= zone.object_name %></td>
+        <td><%= zone.isbem_id %></td>
+        <td><%= zone.activity %></td>
+        <td><%= zone.activity_name %></td>
+        <td><%= zone.multiplier %></td>
+        <td><%= zone.area %></td>
+        <td><%= zone.height %></td>
+        <td><%= zone.vent_zone_hvac %></td>
+        <td><%= zone.q_v_type %></td>
+        <td><%= zone.f_ctrl_vent_dem %></td>
+        <td><%= zone.heat_rec_system %></td>
+        <td><%= zone.heat_rec_seff %></td>
+        <td><%= zone.heat_rec_var_eff %></td>
+        <td><%= zone.hepa_filter %></td>
+        <td><%= zone.vent_mech_exh %></td>
+        <td><%= zone.destrat_fan %></td>
+        <td><%= zone.vent_sfp %></td>
+        <td><%= zone.sfp_tu %></td>
+        <td><%= zone.q50_inf %></td>
+        <td><%= zone.dhw_generator %></td>
+        <td><%= zone.dhw_pipe_len %></td>
+        <td><%= zone.light_case %></td>
+        <td><%= zone.light_type %></td>
+        <td><%= zone.light_display_eff %></td>
+        <td><%= zone.light_control %></td>
+        <td><%= zone.light_dl_aut_zone %></td>
+        <td><%= zone.light_occ_sens_t %></td>
+        <td><%= zone.light_time_switch %></td>
+        <td><%= zone.jnct_roof_wall_mc %></td>
+        <td><%= zone.jnct_wall_grnd_mc %></td>
+        <td><%= zone.jnct_wall_wall_mc %></td>
+        <td><%= zone.jnct_wall_flr_mc %></td>
+        <td><%= zone.jnct_lintel_mc %></td>
+        <td><%= zone.jnct_sill_mc %></td>
+        <td><%= zone.jnct_jamb_mc %></td>
+        <td><%= zone.jnct_roof_wall %></td>
+        <td><%= zone.jnct_wall_grnd %></td>
+        <td><%= zone.jnct_wall_wall %></td>
+        <td><%= zone.jnct_wall_flr %></td>
+        <td><%= zone.jnct_lintel %></td>
+        <td><%= zone.jnct_sill %></td>
+        <td><%= zone.jnct_jamb %></td>
+        <td><%= zone.jnct_accr_detail %></td>
+        <td><%= zone.jnct_accr_detail_mc %></td>
+        <td><%= zone.night_cooling %></td>
+        <td><%= zone.q_v_m_exh %></td>
+        <td><%= zone.vent_sfp_exh %></td>
+        <td><%= zone.vent_mech_exh_ncm %></td>
+        <td><%= zone.lamp_ballast_eff_dl %></td>
+        <td><%= zone.constant_illum %></td>
+        <td><%= zone.light_dl_area_perc %></td>
+        <td><%= zone.light_paras_pw_occ %></td>
+        <td><%= zone.shell_assumed %></td>
+        <td><%= zone.light_act_watt %></td>
+        <td><%= zone.light_lux_design %></td>
+        <td><%= zone.light_photo_type %></td>
+        <td><%= zone.light_paras_pw %></td>
+        <td><%= zone.light_ph_back %></td>
+        <td><%= link_to 'Show', zone %></td>
+        <td><%= link_to 'Edit', edit_zone_path(zone) %></td>
+        <td><%= link_to 'Destroy', zone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Zone', new_zone_path %>

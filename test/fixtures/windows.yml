@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  object_name: MyString
+  area: MyString
+  glass: MyString
+  dev_proj_ratio: MyString
+  aspect_ratio: MyString
+  frame_factor: MyString
+  shading_position: MyString
+  shading_colour: MyString
+  shading_translucency: MyString
+  shading_factor: MyString
+  brise_soleil: MyString
+  disp_wind: MyString
+  multiplier: MyString
+  roof_light_cover: MyString
+
+two:
+  object_name: MyString
+  area: MyString
+  glass: MyString
+  dev_proj_ratio: MyString
+  aspect_ratio: MyString
+  frame_factor: MyString
+  shading_position: MyString
+  shading_colour: MyString
+  shading_translucency: MyString
+  shading_factor: MyString
+  brise_soleil: MyString
+  disp_wind: MyString
+  multiplier: MyString
+  roof_light_cover: MyString

@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Object name:</strong>
+  <%= @dhw_generator.object_name %>
+</p>
+
+<p>
+  <strong>Isbem:</strong>
+  <%= @dhw_generator.isbem_id %>
+</p>
+
+<p>
+  <strong>Heat gen type:</strong>
+  <%= @dhw_generator.heat_gen_type %>
+</p>
+
+<p>
+  <strong>Dhw gen seff:</strong>
+  <%= @dhw_generator.dhw_gen_seff %>
+</p>
+
+<p>
+  <strong>Fuel type:</strong>
+  <%= @dhw_generator.fuel_type %>
+</p>
+
+<p>
+  <strong>Store system:</strong>
+  <%= @dhw_generator.store_system %>
+</p>
+
+<p>
+  <strong>Store vol:</strong>
+  <%= @dhw_generator.store_vol %>
+</p>
+
+<p>
+  <strong>Store insulat type:</strong>
+  <%= @dhw_generator.store_insulat_type %>
+</p>
+
+<p>
+  <strong>Store insulat thick:</strong>
+  <%= @dhw_generator.store_insulat_thick %>
+</p>
+
+<p>
+  <strong>Sec circulation:</strong>
+  <%= @dhw_generator.sec_circulation %>
+</p>
+
+<p>
+  <strong>Heat gen post98:</strong>
+  <%= @dhw_generator.heat_gen_post98 %>
+</p>
+
+<p>
+  <strong>Heat source:</strong>
+  <%= @dhw_generator.heat_source %>
+</p>
+
+<p>
+  <strong>Hvac system eff:</strong>
+  <%= @dhw_generator.hvac_system_eff %>
+</p>
+
+<p>
+  <strong>Chp:</strong>
+  <%= @dhw_generator.chp %>
+</p>
+
+<%= link_to 'Edit', edit_dhw_generator_path(@dhw_generator) %> |
+<%= link_to 'Back', dhw_generators_path %>

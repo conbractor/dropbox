@@ -1,0 +1,307 @@
+<%= form_with(model: zone, local: true) do |form| %>
+  <% if zone.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(zone.errors.count, "error") %> prohibited this zone from being saved:</h2>
+
+      <ul>
+        <% zone.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :object_name %>
+    <%= form.text_field :object_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :isbem_id %>
+    <%= form.text_field :isbem_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activity %>
+    <%= form.text_field :activity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activity_name %>
+    <%= form.text_field :activity_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :multiplier %>
+    <%= form.text_field :multiplier %>
+  </div>
+
+  <div class="field">
+    <%= form.label :area %>
+    <%= form.text_field :area %>
+  </div>
+
+  <div class="field">
+    <%= form.label :height %>
+    <%= form.text_field :height %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vent_zone_hvac %>
+    <%= form.text_field :vent_zone_hvac %>
+  </div>
+
+  <div class="field">
+    <%= form.label :q_v_type %>
+    <%= form.text_field :q_v_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :f_ctrl_vent_dem %>
+    <%= form.text_field :f_ctrl_vent_dem %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heat_rec_system %>
+    <%= form.text_field :heat_rec_system %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heat_rec_seff %>
+    <%= form.text_field :heat_rec_seff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :heat_rec_var_eff %>
+    <%= form.text_field :heat_rec_var_eff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hepa_filter %>
+    <%= form.text_field :hepa_filter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vent_mech_exh %>
+    <%= form.text_field :vent_mech_exh %>
+  </div>
+
+  <div class="field">
+    <%= form.label :destrat_fan %>
+    <%= form.text_field :destrat_fan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vent_sfp %>
+    <%= form.text_field :vent_sfp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sfp_tu %>
+    <%= form.text_field :sfp_tu %>
+  </div>
+
+  <div class="field">
+    <%= form.label :q50_inf %>
+    <%= form.text_field :q50_inf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dhw_generator %>
+    <%= form.text_field :dhw_generator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dhw_pipe_len %>
+    <%= form.text_field :dhw_pipe_len %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_case %>
+    <%= form.text_field :light_case %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_type %>
+    <%= form.text_field :light_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_display_eff %>
+    <%= form.text_field :light_display_eff %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_control %>
+    <%= form.text_field :light_control %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_dl_aut_zone %>
+    <%= form.text_field :light_dl_aut_zone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_occ_sens_t %>
+    <%= form.text_field :light_occ_sens_t %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_time_switch %>
+    <%= form.text_field :light_time_switch %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_roof_wall_mc %>
+    <%= form.text_field :jnct_roof_wall_mc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_wall_grnd_mc %>
+    <%= form.text_field :jnct_wall_grnd_mc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_wall_wall_mc %>
+    <%= form.text_field :jnct_wall_wall_mc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_wall_flr_mc %>
+    <%= form.text_field :jnct_wall_flr_mc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_lintel_mc %>
+    <%= form.text_field :jnct_lintel_mc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_sill_mc %>
+    <%= form.text_field :jnct_sill_mc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_jamb_mc %>
+    <%= form.text_field :jnct_jamb_mc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_roof_wall %>
+    <%= form.text_field :jnct_roof_wall %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_wall_grnd %>
+    <%= form.text_field :jnct_wall_grnd %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_wall_wall %>
+    <%= form.text_field :jnct_wall_wall %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_wall_flr %>
+    <%= form.text_field :jnct_wall_flr %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_lintel %>
+    <%= form.text_field :jnct_lintel %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_sill %>
+    <%= form.text_field :jnct_sill %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_jamb %>
+    <%= form.text_field :jnct_jamb %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_accr_detail %>
+    <%= form.text_field :jnct_accr_detail %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jnct_accr_detail_mc %>
+    <%= form.text_field :jnct_accr_detail_mc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :night_cooling %>
+    <%= form.text_field :night_cooling %>
+  </div>
+
+  <div class="field">
+    <%= form.label :q_v_m_exh %>
+    <%= form.text_field :q_v_m_exh %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vent_sfp_exh %>
+    <%= form.text_field :vent_sfp_exh %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vent_mech_exh_ncm %>
+    <%= form.text_field :vent_mech_exh_ncm %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lamp_ballast_eff_dl %>
+    <%= form.text_field :lamp_ballast_eff_dl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :constant_illum %>
+    <%= form.text_field :constant_illum %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_dl_area_perc %>
+    <%= form.text_field :light_dl_area_perc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_paras_pw_occ %>
+    <%= form.text_field :light_paras_pw_occ %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shell_assumed %>
+    <%= form.text_field :shell_assumed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_act_watt %>
+    <%= form.text_field :light_act_watt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_lux_design %>
+    <%= form.text_field :light_lux_design %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_photo_type %>
+    <%= form.text_field :light_photo_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_paras_pw %>
+    <%= form.text_field :light_paras_pw %>
+  </div>
+
+  <div class="field">
+    <%= form.label :light_ph_back %>
+    <%= form.text_field :light_ph_back %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

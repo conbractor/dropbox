@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Compliances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Object name</th>
+      <th>Epc type</th>
+      <th>Eng heritage</th>
+      <th>Br stage</th>
+      <th>Air con installed</th>
+      <th>Air con kw</th>
+      <th>Air con inspection</th>
+      <th>Alt sys consider</th>
+      <th>Epc language</th>
+      <th>Shell and core</th>
+      <th>Modular portable</th>
+      <th>Distress purchase</th>
+      <th>Air con kw exact</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @compliances.each do |compliance| %>
+      <tr>
+        <td><%= compliance.object_name %></td>
+        <td><%= compliance.epc_type %></td>
+        <td><%= compliance.eng_heritage %></td>
+        <td><%= compliance.br_stage %></td>
+        <td><%= compliance.air_con_installed %></td>
+        <td><%= compliance.air_con_kw %></td>
+        <td><%= compliance.air_con_inspection %></td>
+        <td><%= compliance.alt_sys_consider %></td>
+        <td><%= compliance.epc_language %></td>
+        <td><%= compliance.shell_and_core %></td>
+        <td><%= compliance.modular_portable %></td>
+        <td><%= compliance.distress_purchase %></td>
+        <td><%= compliance.air_con_kw_exact %></td>
+        <td><%= link_to 'Show', compliance %></td>
+        <td><%= link_to 'Edit', edit_compliance_path(compliance) %></td>
+        <td><%= link_to 'Destroy', compliance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Compliance', new_compliance_path %>

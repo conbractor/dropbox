@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Windows</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Object name</th>
+      <th>Area</th>
+      <th>Glass</th>
+      <th>Dev proj ratio</th>
+      <th>Aspect ratio</th>
+      <th>Frame factor</th>
+      <th>Shading position</th>
+      <th>Shading colour</th>
+      <th>Shading translucency</th>
+      <th>Shading factor</th>
+      <th>Brise soleil</th>
+      <th>Disp wind</th>
+      <th>Multiplier</th>
+      <th>Roof light cover</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @windows.each do |window| %>
+      <tr>
+        <td><%= window.object_name %></td>
+        <td><%= window.area %></td>
+        <td><%= window.glass %></td>
+        <td><%= window.dev_proj_ratio %></td>
+        <td><%= window.aspect_ratio %></td>
+        <td><%= window.frame_factor %></td>
+        <td><%= window.shading_position %></td>
+        <td><%= window.shading_colour %></td>
+        <td><%= window.shading_translucency %></td>
+        <td><%= window.shading_factor %></td>
+        <td><%= window.brise_soleil %></td>
+        <td><%= window.disp_wind %></td>
+        <td><%= window.multiplier %></td>
+        <td><%= window.roof_light_cover %></td>
+        <td><%= link_to 'Show', window %></td>
+        <td><%= link_to 'Edit', edit_window_path(window) %></td>
+        <td><%= link_to 'Destroy', window, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Window', new_window_path %>

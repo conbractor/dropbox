@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  object_name: MyString
+  epc_type: MyString
+  eng_heritage: MyString
+  br_stage: MyString
+  air_con_installed: MyString
+  air_con_kw: MyString
+  air_con_inspection: MyString
+  alt_sys_consider: MyString
+  epc_language: MyString
+  shell_and_core: MyString
+  modular_portable: MyString
+  distress_purchase: MyString
+  air_con_kw_exact: MyString
+
+two:
+  object_name: MyString
+  epc_type: MyString
+  eng_heritage: MyString
+  br_stage: MyString
+  air_con_installed: MyString
+  air_con_kw: MyString
+  air_con_inspection: MyString
+  alt_sys_consider: MyString
+  epc_language: MyString
+  shell_and_core: MyString
+  modular_portable: MyString
+  distress_purchase: MyString
+  air_con_kw_exact: MyString

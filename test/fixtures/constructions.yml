@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  object_name: MyString
+  type_0: MyString
+  u_value: MyString
+  u_value_corr: MyString
+  cm: MyString
+  metal_cladding: MyString
+
+two:
+  object_name: MyString
+  type_0: MyString
+  u_value: MyString
+  u_value_corr: MyString
+  cm: MyString
+  metal_cladding: MyString
