@@ -51,7 +51,7 @@ class ProcessDropJob < ApplicationJob
         print "Skip empty line or comment."
       elsif line.match(/\.\./).nil? # doesn't contain '..'
         next_is_new = true
-        object_type = nil
+        object_type = ""
         block = Hash.new # a single db record
         while line.match(/\.\./).nil? # capture inside of here
           split = line.partition('=')
@@ -76,7 +76,7 @@ class ProcessDropJob < ApplicationJob
         types[object_type].push(block) # save to memory, although unused :(
         add_to_db(object_type, block) # add to database
       end
-      email # send email when job completes
+      # email # send email when job completes
     end
   end
 end
